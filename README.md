@@ -15,6 +15,7 @@ Esse repositório serve para colocar meus exercícios concluídos.
 ## 📕 Desafios concluidos
 
 - Desafio 1 - SOMA DE NÚMEROS ✔️
+- Desafio 2 - SOMA OU MULTIPLICAÇÃO ✔️
 - Desafio 3 - MEDIA DE NOTA ✔️
 - Desafio 4 - BIBLIOTECA ✔️
 - Desafio 5 - VIAGEM DE BARCO ✔️
