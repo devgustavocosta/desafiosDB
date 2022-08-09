@@ -16,5 +16,6 @@ Esse repositório serve para colocar meus exercícios concluídos.
 
 - Desafio 1 - SOMA DE NÚMEROS ✔️
 - Desafio 3 - MEDIA DE NOTA ✔️
+- Desafio 4 - BIBLIOTECA ✔️
 - Desafio 5 - VIAGEM DE BARCO ✔️
 - Desafio 6 - PRINTE MEIO TRIANGULO ✔️
