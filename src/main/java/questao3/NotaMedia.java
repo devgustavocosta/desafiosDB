@@ -7,6 +7,8 @@ public class NotaMedia {
         Scanner entrada = new Scanner(System.in);
 
         // Fiz o código retornar a média de acordo com os valores que o usuário colocar
+        System.out.println("Bem vindo!");
+        System.out.println("---------------------------------");
 
         System.out.println("Digite a primeira nota: ");
         double nota1 = entrada.nextDouble();

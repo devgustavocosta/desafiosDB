@@ -7,8 +7,10 @@ public class Triangulo {
         Scanner entrada = new Scanner(System.in);
 
         // Fiz o código retornar quantas linhas o usuário decidir
+        System.out.println("Bem vindo!");
+        System.out.println("---------------------------------");
 
-        System.out.println("Digite a quantidade de linhas: ");
+        System.out.print("Digite a quantidade de linhas: ");
         int linhas = entrada.nextInt();
 
         for (int i = 1; i <= linhas; i++){
