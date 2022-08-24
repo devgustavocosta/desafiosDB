@@ -3,6 +3,10 @@ package questao6;
 import java.util.Scanner;
 
 public class Triangulo {
+
+    /* Printe meio triângulo. Com 15 linhas, cada linha deve ter um asterisco a mais do que
+    a linha de cima. A primeira linha começa com 1 asterisco. */
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 

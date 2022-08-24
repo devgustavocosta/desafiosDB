@@ -3,32 +3,45 @@ package questao3;
 import java.util.Scanner;
 
 public class NotaMedia {
+
+    /* Dada uma lista de 3 notas, calcule a média simples e, caso a média seja maior ou
+    igual a 7, retorne "Aluno aprovado :)", se for menor que 7, retorne "Aluno reprovado. */
+
+    private double nota1;
+    private double nota2;
+    private double nota3;
+
+    public double calculaMedia(){
+        return (nota1 + nota2 + nota3) / 3;
+    }
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
+        NotaMedia n = new NotaMedia();
 
         // Fiz o código retornar a média de acordo com os valores que o usuário colocar
         System.out.println("Bem vindo!");
         System.out.println("---------------------------------");
 
         System.out.println("Digite a primeira nota: ");
-        double nota1 = entrada.nextDouble();
+        n.nota1 = entrada.nextDouble();
 
         System.out.println("Digite a segunda nota: ");
-        double nota2 = entrada.nextDouble();
+        n.nota2 = entrada.nextDouble();
 
         System.out.println("Digite a terceira nota: ");
-        double nota3 = entrada.nextDouble();
-
-        double calculo = (nota1 + nota2 + nota3) / 3;
+        n.nota3 = entrada.nextDouble();
 
         System.out.println("---------------------------------");
-        System.out.println("Sua nota foi: " + calculo);
-
+        System.out.printf("Sua nota foi: %.1f%n", + n.calculaMedia());
         System.out.println("---------------------------------");
-        if (calculo < 7){
-            System.out.println("Aluno reprovado");
-        } else {
-            System.out.println("Aluno aprovado");
+
+        if (n.calculaMedia() < 7){
+            System.out.println("Aluno reprovado!");
+        }
+        if (n.calculaMedia() > 7){
+            System.out.println("Aluno aprovado!");
         }
     }
 }

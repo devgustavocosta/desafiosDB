@@ -1,12 +1,23 @@
 package questao1;
 
+import java.util.ArrayList;
+
 public class Soma {
+
+    /* Dada uma lista de números, retorne a soma de todos os números. */
+
+    public static ArrayList<Integer> listaNumeros(){
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(5);
+        list.add(6);
+        return list;
+    }
     public static void main(String[] args) {
-        int[] numeros = {1, 2, 3, 4, 5};
         int soma = 0;
 
-        for(int i = 0; i < numeros.length; i++){
-            soma += i;
+        for(int numeros : listaNumeros()){
+            soma += numeros;
         }
         System.out.println(soma);
     }
