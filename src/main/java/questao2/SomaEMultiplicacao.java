@@ -7,13 +7,16 @@ public class SomaEMultiplicacao {
 
     /* Dada uma lista de números e uma String "+" ou "*", some ou multiplique todos os
     números dependendo do parâmetro. */
+    private static int numero1;
+    private static int numero2;
+    private static int numero3;
+    static ArrayList<Integer> lista = new ArrayList<>();;
 
     public static ArrayList<Integer> listaNumeros(){
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(2);
-        list.add(5);
-        list.add(6);
-        return list;
+        lista.add(numero1);
+        lista.add(numero2);
+        lista.add(numero3);
+        return lista;
     }
 
     public static void main(String[] args) {
@@ -21,6 +24,12 @@ public class SomaEMultiplicacao {
 
         System.out.println("Bem vindo!");
         System.out.println("---------------------------------");
+        System.out.print("Digite seu primeiro número: ");
+        numero1 = entrada.nextInt();
+        System.out.print("Digite seu segundo número: ");
+        numero2 = entrada.nextInt();
+        System.out.print("Digite seu terceiro número: ");
+        numero3 = entrada.nextInt();
         System.out.print("Você deseja somar(s) ou multiplicar(m)? ");
         String escolha = entrada.next();
         System.out.println("---------------------------------");

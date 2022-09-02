@@ -21,16 +21,15 @@ public class NotaMedia {
         NotaMedia n = new NotaMedia();
 
         // Fiz o código retornar a média de acordo com os valores que o usuário colocar
-        System.out.println("Bem vindo!");
-        System.out.println("---------------------------------");
+        System.out.println("--------------- Bem vindo! ---------------\n");
 
-        System.out.println("Digite a primeira nota: ");
+        System.out.print("Digite a primeira nota: ");
         n.nota1 = entrada.nextDouble();
 
-        System.out.println("Digite a segunda nota: ");
+        System.out.print("Digite a segunda nota: ");
         n.nota2 = entrada.nextDouble();
 
-        System.out.println("Digite a terceira nota: ");
+        System.out.print("Digite a terceira nota: ");
         n.nota3 = entrada.nextDouble();
 
         System.out.println("---------------------------------");

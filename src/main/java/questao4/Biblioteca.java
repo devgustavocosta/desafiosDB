@@ -1,13 +1,14 @@
 package questao4;
 
+import java.util.ArrayList;
+
 public class Biblioteca {
-    private final int livros;
+    public int livros;
 
-    public Biblioteca(int livros){
-        this.livros = livros;
-    }
+    public ArrayList<Integer> bibliotecas = new ArrayList<>();
 
-    public int getLivros() {
-        return livros;
+    public ArrayList<Integer> bibliotecaSoma(){
+        bibliotecas.add(livros);
+        return bibliotecas;
     }
 }

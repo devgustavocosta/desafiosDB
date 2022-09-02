@@ -11,30 +11,26 @@ public class Main {
         "C" se o número for maior ou igual 20 e menor que 30
         "Z", se o número for igual a 0. */
 
-        Biblioteca biblioteca = new Biblioteca(10);
-        Biblioteca biblioteca1 = new Biblioteca(20);
-        Biblioteca biblioteca2 = new Biblioteca(30);
-        Biblioteca biblioteca3 = new Biblioteca(0);
+        Biblioteca b = new Biblioteca();
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Bem vindo!");
-        System.out.println("---------------------------------");
+        System.out.println("--------------- Bem vindo! ---------------\n");
         System.out.print("Digite a quantidade de livros desejada: ");
-        int quantidade = entrada.nextInt();
+        b.livros = entrada.nextInt();
 
-        System.out.println("---------------------------------");
+        System.out.println("------------------------------------------");
 
-        if (quantidade >= 1 && quantidade <= biblioteca.getLivros()){
+        if (b.livros >= 1 && b.livros < 10) {
             System.out.println("Biblioteca A");
         }
-        if (quantidade >= 10 && quantidade <= biblioteca1.getLivros()) {
+        if (b.livros >= 10 && b.livros < 20) {
             System.out.println("Biblioteca B");
         }
-        if (quantidade >= 20 && quantidade <= biblioteca2.getLivros()) {
+        if (b.livros >= 20 && b.livros < 30) {
             System.out.println("Biblioteca C");
         }
-        if (quantidade == biblioteca3.getLivros()){
+        if (b.livros == 0) {
             System.out.println("Biblioteca Z");
         }
     }
